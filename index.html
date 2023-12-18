@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This webpage serves as a testament of my html and CSS proficinecy, and showcases my portfolio and porjects.">
+    <title>Personal Portfolio Website</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <img src="imgs/logo.png" alt="Ziad Elshahawy" class = "logo">
+                <ul>
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href=#about>About Me</a></li>
+                    <li><a href="#experiences">Experiences</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </nav>
+            <h1> Hello, I am <span>Ziad!</span> <br> I am an aspiring software engineer majoring in <span>CS + Math.</span> </h1>
+        </div>
+        <h2 class="centered-text">"Hello, world!"</h2>
+    </header>
+        
+    <section id="about">
+        <div class="container">
+            <div class = "row">
+                <div class="about-col-2">
+                    <h2 class = "subtitle">About<span class="green"> me: </span></h2>
+                    <h3 class = 'padding'>I am a first year at the University of Chicago (GPA: 3.92). I am mostly passionate about software development,
+                        and I am experienced in various programming languages, most prominently Python. I am adept in developing websites and databases, handling the underlying systems within, and I am looking for an internship for the summer of 2023.
+                        <br><br>Relevant courses taken: Introduction to Computer Science I, Honors Calculas and Mechanics.
+                    </h3>
+                </div>
+        </div>
+    </div>
+    </section>
+    <section id="experiences">
+        <div class="container">
+            <div class = "row">
+                <div class="about-col-2">
+                    <h2 class = "subtitle">Experienes: <br> </h2> <br>
+                    <ul>
+                        <li> <h3> 12/2023 - <span class="green"> Present </span> </h3> <p> Clerical Assistant at UChicago Hospital. Handles databases to verify and report insurances' status <br> <br> </p> </li>
+                        <li> <h3> 05/2020 - 06/2023 </h3> <p> Receptionist and Database Developer at Dr. Eman Cosmoderma Clinic. Developed a database that actively tracks and counts customers referred by our partners, ultimately to 
+                            calculate the referral fees. <br>  </p> </li> <br>
+                                <li> <h3> 02/2021 to 05/2022 </h3><p>Volunteer at Al Hosary Mosque and hospital. Organized a team of volunteers to complete a food security project to improvised communities within a tight timeline
+                                    and a wide area scope. Directed a team of volunteers to give access to Hepatitis C Tablets for impoverished communities.</p></li>
+                                    
+                </div>
+        </div>
+    </section>
+    <section id="projects">
+        <div class="container">
+            <div class = "row">
+                <div class="about-col-2">
+                    <h2 class = "subtitle socials">Projects (Code here <a href=""class="socials">GitHub</a>):<br> </h2> <br>
+                    <ul>
+                        <li> <h3> Guessing game on Python </h3> <p> This is a simple yet engaging game where players are presented with a set of letters in the terminal and are tasked with creating words using those letters. The game includes a score tracker to keep track of your word-building prowess. <br> <br> </p> </li>
+                        <li> <h3> Tic Tac To - Python Edition </h3> <p> <span>This Python program allows two players to take turns placing 'X' and 'O' marks on a 3x3 grid, with the objective of getting three in a row vertically, horizontally, or diagonally. The program is user-friendly, engaging, and offers a fun way to test your strategic thinking and decision-making skills. Object Oriented Proframming is utilised wholly in the program  </span> <br> <br> <span> </p> </li>
+                        <li> <h3>Language Module</h3> <p> This program is a simple yet powerful language program designed for the analysis of literary works, especially those of renowned writers like William Shakespeare. This tool leverages advanced natural language processing (NLP) algorithms to predict the probability of the next word or phrase in a given text, offering users a unique insight into the linguistic patterns and stylistic choices employed by the author. Due to school restrictions, I have to keep this project private; however, please contact me if you need to see it</p></li>
+                </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h3>Feel free to contact me for any inquiries or job opportunities at:</h3>
+                    <div class="socials closer font_size margin_right">
+                        <p><a href="mailto:Ziad.A.Elshahawy@gmail.com"class="margin-bottom"><i class="fas fa-paper-plane"></i> Ziad.A.Elshahawy@gmail.com</s> <br></a></p>
+                        <a href="https://www.linkedin.com/in/ziad-elshahawy"class="margin-bottom"> <i class="fab fa-linkedin fa-3x"></i></a>
+                        <a href="https://github.com/zelshahawy"class="margin-bottom"> <i class="fab fa-github fa-3x"></i></a> <br> 
+                        <a href="New Resume - Ziad.pdf" download class="cv-btn">Download CV</a>
+                </div>
+                
+            </div>
+            <div class="contact-right">
+        <form name="submit-to-google-sheet">
+            <input type="text" name="name" placeholder=" Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </div>
+        </div>
+    </div>
+    </section>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyY6TXaXgDdtJbrevGl_tmevdxcL7SxlSlHYYlK2lvZKV5b8TnGizAEXdkvoAgR1V9HsQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
