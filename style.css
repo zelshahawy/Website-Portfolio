@@ -226,3 +226,28 @@ header h2:hover{
     color: #00FF00;
     transform: translateY(-5px);
 }
+
+.btn{
+    background: #00FF00;
+    color: #fff;
+    padding: 9px 30px;
+    margin:  auto;
+    border-radius: 5px;
+    font-size: 20px;
+    border: 1 px solid green;
+    transition: all 0.3s ease;
+    width: fit-content;
+    text-decoration: none;
+}
+
+.btn:hover{
+    background: transparent;
+    color: #00FF00;
+    border: 1px solid #00FF00;
+}
+
+.msg{
+    color: #00FF00;
+    display: block;
+    margin-top: 10px;
+}
