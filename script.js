@@ -12,7 +12,7 @@ $('a[href*="#"]').on('click', function (e) {
 
 $(document).ready(function() {
     var headerHeight = document.querySelector('.constheader').offsetHeight;
-    document.querySelector('#about').style.marginTop = headerHeight + 'px';
+    document.querySelector('.header-text').style.marginTop = headerHeight + 'px';
 });
 
 const scriptURL = 'https://script.google.com/macros/s/AKfycbyY6TXaXgDdtJbrevGl_tmevdxcL7SxlSlHYYlK2lvZKV5b8TnGizAEXdkvoAgR1V9HsQ/exec'
