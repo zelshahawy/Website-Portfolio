@@ -98,7 +98,8 @@ header span{
 }
 
 .header-text{
-    margin-top: 200px;
+    margin-top: 500px;
+    margin-left: 30px
 }
 .about-col-1{
     flex-basis: 35%;
