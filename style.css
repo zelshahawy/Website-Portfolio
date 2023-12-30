@@ -97,6 +97,9 @@ header span{
 
 }
 
+.header-text{
+    margin-top: 100px;
+}
 .about-col-1{
     flex-basis: 35%;
     flex-wrap: wrap;
