@@ -28,9 +28,6 @@ header{
     z-index: 100;
     
 }
-#about {
-    margin-top: 100px;
-}
 nav{
     display: flex;
     justify-content: space-between;
