@@ -19,6 +19,15 @@ header{
     padding: 10px 10%;
 
 }
+
+.constheader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    
+}
 nav{
     display: flex;
     justify-content: space-between;
@@ -60,9 +69,8 @@ nav ul li a:hover::after{
     width: 100%;
 }
 
-header h1{
+h1{
     font-size: 40px;
-    margin-top: 20px;
 }
 
 header p{
@@ -88,6 +96,9 @@ header span{
 
 }
 
+.header-text{
+    padding-top: 500px;
+}
 .about-col-1{
     flex-basis: 35%;
     flex-wrap: wrap;
