@@ -12,7 +12,8 @@ HTML
 CSS
 JavaScript
 
-Usage
+Usage:
+
 Visit https://zelshahawy.github.io/Website-Portfolio/ to explore my portfolio and learn more about my skills and projects.
 
 To run this project locally:
