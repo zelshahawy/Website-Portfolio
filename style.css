@@ -205,7 +205,11 @@ header span{
 .socials a:hover {
     color: #00FF00;
     transform: translateY(-5px);
+}
 
+a.socials:hover {
+    color: #00FF00;
+    transform: translateY(-5px);
 }
 
 form input, form textarea{
