@@ -29,5 +29,5 @@ Open index.html in your web browser.
 Contact
 If you have any questions or would like to get in touch, feel free to contact me at Zelshahawy@uchicago.edu
 
-License
+License:
 This project is licensed under the MIT License.
