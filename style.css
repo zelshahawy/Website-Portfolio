@@ -262,3 +262,46 @@ header h2:hover{
     display: block;
     margin-top: 10px;
 }
+/* CSS for smaller screens */
+@media screen and (max-width: 600px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    header p {
+        font-size: 20px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .about-col-1, .contact-left, .contact-right {
+        flex-basis: 100%;
+    }
+
+    .about-col-1 img {
+        width: 100%;
+    }
+
+    .subtitle, .contact-left h3 {
+        font-size: 25px;
+    }
+
+    .subtitle1, .contact-left p {
+        font-size: 18px;
+    }
+
+    .centered-text {
+        font-size: 50px;
+    }
+}
